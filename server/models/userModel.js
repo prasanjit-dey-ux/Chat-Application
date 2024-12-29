@@ -14,5 +14,18 @@ const userSchema = mongoose.Schema (
             type: String,
             require: true,
         },
+        pic: {
+            type: String,
+            require: true,
+            default: 
+            ""
+        },
+    },
+    {
+        timestamp: true
     }
-)
+);
+
+const User = mongoose.Model("User", userSchema);
+
+model.exports = User;

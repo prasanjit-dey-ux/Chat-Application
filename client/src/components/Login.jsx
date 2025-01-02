@@ -3,7 +3,7 @@
 const Login = () => {
   return (
     <>
-        <div className="bg-off-white max-w-md py-10 px-16 rounded-2xl mx-auto flex flex-col justify-between items-center ">
+        <div className="bg-white max-w-sm p-8 rounded-lg shadow-md mx-auto flex flex-col items-center space-y-6 ">
             <div className="justify-between items-start flex">
                 <div className="bg-beige h-14 w-14 rounded-full justify-between items-center flex">
                     {/* ICON */}

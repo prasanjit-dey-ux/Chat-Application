@@ -1,12 +1,16 @@
+import { assets } from "../assets/assets"
 
 
 const Login = () => {
   return (
     <>
-        <div className="bg-off-white w-full max-w-md p-5 rounded-2xl mx-auto flex flex-col justify-between items-center ">
+        <div className="bg-off-white w-full max-w-md p-10 rounded-2xl mx-auto flex flex-col justify-between items-center ">
             <div className="justify-between items-start flex">
                 <div className="bg-beige h-14 w-14 rounded-full justify-between items-center flex">
                     {/* ICON */}
+                    <div className="flex justify-between items-center">
+                        <img src={assets.login_icon} alt="" />
+                    </div>
                 </div>
             </div>
             <div className="mt-4 text-center">

@@ -2,6 +2,7 @@ import { useState } from "react";
 import { assets } from "../assets/assets";
 
 const SignUpPage = () => {
+  const [name, setName] = useState("")
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
@@ -44,6 +45,21 @@ const SignUpPage = () => {
           onSubmit={handleSignUp}
           className="flex flex-col gap-6 mt-8 w-full"
         >
+        {/* Name Input */}
+          <div className="flex flex-col gap-2">
+            <label className="text-black text-base font-normal font-[Roboto]">
+              Name
+            </label>
+            <input
+              className="h-10 rounded-lg border border-gray-300 px-4 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              type="name"
+              placeholder="Enter your name"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              required
+            />
+          </div>
+
           {/* Email Input */}
           <div className="flex flex-col gap-2">
             <label className="text-black text-base font-normal font-[Roboto]">

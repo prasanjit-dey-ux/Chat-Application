@@ -23,14 +23,14 @@ const LoginPage = () => {
                 <div className="flex flex-col gap-2 ">
                     <label className="text-black text-base font-normal font-[Roboto]">Email</label>
                     <input 
-                        className="h-10 rounded-lg border border-gray-2 px-4 focus:outline-none"
+                        className="h-10 rounded-lg border border-gray-2 px-4 focus:outline-none focus:ring-2 focus:ring-slate-400"
                         type="email"
                     />
                 </div>
                 <div className="flex flex-col gap-2">
                     <label className="text-black text-base font-normal font-[Roboto]">Password</label>
                     <input
-                        className="h-10 rounded-lg border border-gray-2 px-4 focus:outline-none"
+                        className="h-10 rounded-lg border border-gray-2 px-4 focus:outline-none focus:ring-2 focus:ring-slate-400"
                         type="password"
                         
                     />
